@@ -2,7 +2,7 @@ function App() {
   //@ts-ignore
   const version = import.meta.env.VITE_PR_NUMBER || 'dev';
   return (
-    <main className="flex-1 flex justify-center py-4 flex-col">
+    <main className="flex-1 flex justify-center py-4 flex-col items-center gap-4">
       <h1 className="text-3xl text-red-600">Hello from my preview</h1>
       <p className="text-gray-50">Current time {new Date().toLocaleDateString()}</p>
       <p>Build version: {version}</p>
