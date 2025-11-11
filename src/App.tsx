@@ -1,7 +1,6 @@
 function App() {
   //@ts-ignore
-  const version = import.meta.env.VITE_PR_VERSION || 'dev';
-  console.log(import.meta.env)
+  const version = import.meta.env.VITE_PR_NUMBER || 'dev';
   return (
     <main className="flex-1 flex justify-center py-4 flex-col">
       <h1 className="text-3xl text-red-600">Hello from my preview</h1>
