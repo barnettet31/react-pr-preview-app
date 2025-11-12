@@ -10,7 +10,7 @@ function App() {
         day: "numeric",
       })}</p>
       <p>Build version: {version}</p>
-
+      <p>You're doing your best</p>
     </main>
   )
 }
