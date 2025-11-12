@@ -1,12 +1,16 @@
 function App() {
-  //@ts-ignore
   const version = import.meta.env.VITE_PR_NUMBER || 'dev';
   return (
     <main className="flex-1 flex justify-center py-4 flex-col items-center gap-4">
-      <h1 className="text-3xl text-red-600 font-semibold">Hello from my preview</h1>
-      <p className="text-gray-50">Current time {new Date().toLocaleDateString()}</p>
+      <h1 className="text-4xl text-red-600 font-semibold">Hello from my preview</h1>
+      <p className="text-gray-50">Current time {new Date().toLocaleDateString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })}</p>
       <p>Build version: {version}</p>
-      
+
     </main>
   )
 }
